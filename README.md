@@ -10,11 +10,10 @@ A daily activity tracking and shift handover monitoring tool built for Npontu Te
 - Reporting View with Custom Date Filtering & CSV Export
 
 ## Setup Instructions for Reviewers
-1. Clone repository: `git clone <YOUR-GITHUB-REPO-LINK>`
-2. Install dependencies: `composer install` & `npm install`
-3. Setup environment: `cp .env.example .env`
-4. Generate key: `php artisan key:generate`
-5. Link storage: `php artisan storage:link`
-6. Run migrations & seeds: `php artisan migrate`
-7. Start server: `php artisan serve`
-8. Run application: `composer run dev` (or `php artisan serve`)
+1. Install dependencies: `composer install` & `npm install`
+2. Setup environment: `cp .env.example .env`
+3. Generate key: `php artisan key:generate`
+4. Link storage: `php artisan storage:link`
+5. Run migrations & seeds: `php artisan migrate`
+6. Start server: `php artisan serve`
+7. Run application: `composer run dev` (or `php artisan serve`)
