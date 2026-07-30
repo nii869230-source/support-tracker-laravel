@@ -10,10 +10,11 @@ A daily activity tracking and shift handover monitoring tool built for Npontu Te
 - Reporting View with Custom Date Filtering & CSV Export
 
 ## Setup Instructions for Reviewers
-1. Install dependencies: `composer install` & `npm install`
-2. Setup environment: `cp .env.example .env`
-3. Generate key: `php artisan key:generate`
-4. Link storage: `php artisan storage:link`
-5. Run migrations & seeds: `php artisan migrate`
-6. Start server: `php artisan serve`
-7. Run application: `composer run dev` (or `php artisan serve`)
+1. **Clone repository:** `git clone https://github.com/nii869230-source/support-tracker-laravel.git`
+2. **Navigate into project:** `cd support-tracker-laravel`
+3. **Install dependencies:** `composer install` and `npm install`
+4. **Setup environment:** `cp .env.example .env` (or `copy .env.example .env` on Windows CMD)
+5. **Generate key:** `php artisan key:generate`
+6. **Link storage:** `php artisan storage:link`
+7. **Run migrations & seeds:** `php artisan migrate --seed`
+8. **Start application:** Run `php artisan serve` and `npm run dev`
