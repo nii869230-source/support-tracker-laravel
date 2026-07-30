@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@700&family=Quicksand:wght@500&display=swap');
+
+/* ==========================================================================
+   BIOLUMINESCENT TIDE BUTTON BASE & THEMES
+   ========================================================================== */
+.ocean-btn {
+  --bg-deep: #061821;
+  --border-color: rgba(34, 211, 238, 0.35);
+  --border-hover: rgba(124, 108, 232, 0.65);
+  --glow-color: rgba(34, 211, 238, 0.45);
+  --glow-secondary: rgba(124, 108, 232, 0.5);
+  --foam: #e8fffb;
+  --text-idle: #7fd8e0;
+
+  /* Canvas Water & Crest Palette */
+  --wave-top-hover: #1fb8c9;
+  --wave-mid-hover: #0e6e86;
+  --wave-bot-hover: #062634;
+  --wave-top-idle: rgba(14, 148, 136, 0.55);
+  --wave-mid-idle: rgba(9, 80, 95, 0.5);
+  --wave-bot-idle: rgba(4, 30, 40, 0.45);
+  --crest-stroke-hover: rgba(232, 255, 251, 0.9);
+  --crest-stroke-idle: rgba(127, 216, 224, 0.45);
+  --crest-shadow-hover: #7c6ce8;
+  --crest-shadow-idle: #22d3ee;
+
+  position: relative;
+  isolation: isolate;
+  padding: 10px 24px;
+  min-height: 44px;
+  border-radius: 16px;
+  border: 1.5px solid var(--border-color);
+  background: var(--bg-deep);
+  cursor: pointer;
+  overflow: hidden;
+  outline-offset: 4px;
+  transition: transform .4s cubic-bezier(.34,1.56,.64,1),
+              border-color .4s ease,
+              box-shadow .4s ease;
+  box-shadow: 0 0 0 0 rgba(0,0,0,0), inset 0 0 20px rgba(0,0,0,.4);
+  -webkit-tap-highlight-color: transparent;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* 1. INDIGO / PURPLE VARIANT (Log Activity) */
+.ocean-btn-indigo {
+  --bg-deep: #0f172a;
+  --border-color: rgba(99, 102, 241, 0.4);
+  --border-hover: rgba(129, 140, 248, 0.8);
+  --glow-color: rgba(99, 102, 241, 0.5);
+  --glow-secondary: rgba(165, 180, 252, 0.5);
+  --foam: #ffffff;
+  --text-idle: #c7d2fe;
+
+  --wave-top-hover: #6366f1;
+  --wave-mid-hover: #4f46e5;
+  --wave-bot-hover: #1e1b4b;
+  --wave-top-idle: rgba(79, 70, 229, 0.55);
+  --wave-mid-idle: rgba(49, 46, 129, 0.5);
+  --wave-bot-idle: rgba(15, 23, 42, 0.45);
+  --crest-stroke-hover: #e0e7ff;
+  --crest-stroke-idle: rgba(199, 210, 254, 0.6);
+  --crest-shadow-hover: #818cf8;
+  --crest-shadow-idle: #6366f1;
+}
+
+/* 2. EMERALD / GREEN VARIANT (Export CSV) */
+.ocean-btn-emerald {
+  --bg-deep: #022c22;
+  --border-color: rgba(16, 185, 129, 0.4);
+  --border-hover: rgba(52, 211, 153, 0.8);
+  --glow-color: rgba(16, 185, 129, 0.5);
+  --glow-secondary: rgba(110, 231, 183, 0.5);
+  --foam: #ffffff;
+  --text-idle: #a7f3d0;
+
+  --wave-top-hover: #10b981;
+  --wave-mid-hover: #059669;
+  --wave-bot-hover: #064e3b;
+  --wave-top-idle: rgba(5, 150, 105, 0.55);
+  --wave-mid-idle: rgba(4, 120, 87, 0.5);
+  --wave-bot-idle: rgba(2, 44, 34, 0.45);
+  --crest-stroke-hover: #ecfdf5;
+  --crest-stroke-idle: rgba(167, 243, 208, 0.6);
+  --crest-shadow-hover: #34d399;
+  --crest-shadow-idle: #10b981;
+}
+
+/* 3. AMBER / ORANGE VARIANT (Today's Handover) */
+.ocean-btn-amber {
+  --bg-deep: #2d1202;
+  --border-color: rgba(245, 158, 11, 0.4);
+  --border-hover: rgba(251, 191, 36, 0.8);
+  --glow-color: rgba(245, 158, 11, 0.5);
+  --glow-secondary: rgba(253, 230, 138, 0.5);
+  --foam: #ffffff;
+  --text-idle: #fef3c7;
+
+  --wave-top-hover: #f59e0b;
+  --wave-mid-hover: #d97706;
+  --wave-bot-hover: #451a03;
+  --wave-top-idle: rgba(217, 119, 6, 0.55);
+  --wave-mid-idle: rgba(180, 83, 9, 0.5);
+  --wave-bot-idle: rgba(45, 18, 2, 0.45);
+  --crest-stroke-hover: #fffbeb;
+  --crest-stroke-idle: rgba(254, 243, 199, 0.6);
+  --crest-shadow-hover: #fbbf24;
+  --crest-shadow-idle: #f59e0b;
+}
+
+/* 4. SLATE / WHITE VARIANT (Filter) */
+.ocean-btn-slate {
+  --bg-deep: #0f172a;
+  --border-color: rgba(203, 213, 225, 0.4);
+  --border-hover: rgba(241, 245, 249, 0.8);
+  --glow-color: rgba(148, 163, 184, 0.45);
+  --glow-secondary: rgba(203, 213, 225, 0.5);
+  --foam: #ffffff;
+  --text-idle: #494a4b;
+
+  --wave-top-hover: #64748b;
+  --wave-mid-hover: #475569;
+  --wave-bot-hover: #1e293b;
+  --wave-top-idle: rgba(71, 85, 105, 0.55);
+  --wave-mid-idle: rgba(51, 65, 85, 0.5);
+  --wave-bot-idle: rgba(15, 23, 42, 0.45);
+  --crest-stroke-hover: #ffffff;
+  --crest-stroke-idle: rgba(226, 232, 240, 0.6);
+  --crest-shadow-hover: #cbd5e1;
+  --crest-shadow-idle: #94a3b8;
+}
+
+/* Hover States */
+.ocean-btn:hover,
+.ocean-btn:focus-visible {
+  transform: translateY(-3px) scale(1.03);
+  border-color: var(--border-hover);
+  box-shadow:
+    0 12px 28px -8px var(--glow-color),
+    0 0 20px -4px var(--glow-secondary),
+    inset 0 0 20px rgba(0,0,0,.3);
+}
+
+.ocean-btn:active {
+  transform: translateY(-1px) scale(1.01);
+}
+
+/* Canvas Layering */
+.ocean-btn .wave-canvas {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* Text Label Layering */
+.ocean-btn .label2 {
+  position: relative;
+  z-index: 3;
+  font-family: 'Baloo 2', sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  color: var(--text-idle);
+  text-shadow: 0 0 0 transparent;
+  transition: color .5s ease, text-shadow .5s ease, letter-spacing .5s ease;
+  pointer-events: none;
+}
+
+.ocean-btn:hover .label2,
+.ocean-btn:focus-visible .label2 {
+  color: var(--foam);
+  letter-spacing: 0.05em;
+  text-shadow: 0 0 10px var(--border-hover), 0 0 20px var(--glow-secondary);
+}
+
+
